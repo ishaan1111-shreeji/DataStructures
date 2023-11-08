@@ -1,7 +1,9 @@
 # Binary search follows the divide and conquer approach in which the list is divided into two halves,
 # and the item is compared with the middle element of the list.
 # The data structure must be sorted.
-
+# ------------------------------------------------------------------
+# RECURSIVE BINARY SEARCH
+# --------------------------------------------------------------------
 def binarySearch(array,start_index,end_index,value):
     # print(array)
     # print(start_index)
@@ -25,6 +27,7 @@ if __name__=="__main__":
 
     a=input("Enter elements: ")
     ls=list(a.split(","))
+    ls.sort()
     # print(ls)
     # print(len(ls))
     array=[]
@@ -40,3 +43,6 @@ if __name__=="__main__":
         print("Index of Element is : ",result)
     else:
         print("!!! Element Not Present !!!")
+# Complexity Analysis of Linear Search:
+# Time Complexity:  Best Case:O(1)    Worst Case:O(logn)     Average case:o(logn)
+# Space Complexity: O(1)
